@@ -1,0 +1,307 @@
+m255
+13
+cModel Technology
+d/home/isa41_2021_2022/Desktop/lab1_nima/1/new_lab1/lab1.3/tb
+T_opt
+V87kRi?LhWf:O42G0oJ6`g0
+06 6 4 ./work tb_fir fast 0
+o-quiet -auto_acc_if_foreign -work work -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_fir/UUT=../innovus/FIR_unfolded.sdf -suppress 1948
+tExplicit 1
+OE;O;6.2g;35
+Eadder
+w1637162247
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./sum.vhd
+F./sum.vhd
+l0
+L6
+VZeTm`z;]J:Fl>`cdbhAXg1
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abehavioral
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work adder ZeTm`z;]J:Fl>`cdbhAXg1
+l16
+L14
+V5o@MHF?UT:@JN9LYIaL@02
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1
+Eclk_gen
+w1637169981
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./clk_gen.vhd
+F./clk_gen.vhd
+l0
+L5
+V_4Y>iGGNS]DP5M_:KIk6T3
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abeh
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work clk_gen _4Y>iGGNS]DP5M_:KIk6T3
+l20
+L12
+VYZ[@=J:KK9n8oU7DJ5WL_1
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1
+Edata_maker
+w1637162373
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./data_maker_new.vhd
+F./data_maker_new.vhd
+l0
+L11
+VY5cQUhnB]OEO42`ObD8kC1
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abeh
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work data_maker Y5cQUhnB]OEO42`ObD8kC1
+l29
+L22
+V_`maEkZV;W6bV>1=K2I`[1
+OE;C;6.2g;35
+31
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 ieee std_logic_textio
+M1 std textio
+o-93 -work ./work
+tExplicit 1
+Edata_sink
+w1637162395
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./data_sink.vhd
+F./data_sink.vhd
+l0
+L9
+V[SAd7aZBBTUVT;dE31?=W2
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abeh
+DP std textio K]Z^fghZ6B=BjnK5NomDT3
+DP ieee std_logic_textio 8YS?iX`WD1REQG`ZRYQGB2
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work data_sink [SAd7aZBBTUVT;dE31?=W2
+l22
+L20
+V>41[f>WlCXc2[BRJ8iiz]3
+OE;C;6.2g;35
+31
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 ieee std_logic_textio
+M1 std textio
+o-93 -work ./work
+tExplicit 1
+vFIR_unfolded
+IPCZ<Bl;ToY_aKdczaKThk1
+Vk4ie?If^>^ndYjo7@[C5R1
+w1637509755
+8../innovus/FIR_unfolded.v
+F../innovus/FIR_unfolded.v
+L0 15
+Vk4ie?If^>^ndYjo7@[C5R1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+n@f@i@r_unfolded
+Efir_unfolded
+w1637441037
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./FIR_unfolded.vhd
+F./FIR_unfolded.vhd
+l0
+L5
+Vikg7>Nf:Q1OV:FoQK0oEm3
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abehavioral
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fir_unfolded ikg7>Nf:Q1OV:FoQK0oEm3
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+l95
+L22
+V0;`8l9EgdMSIU^EdKE5lK1
+OE;C;6.2g;35
+o-93 -work ./work
+tExplicit 1
+Efourd
+w1637037504
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./fourD.vhd
+F./fourD.vhd
+l0
+L5
+V]S8O[><X6n?Q^Oz9zDd2S1
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abehavioral
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work fourd ]S8O[><X6n?Q^Oz9zDd2S1
+l25
+L13
+ViHLiJDY9:NQTzhgFLjogE2
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1
+Emul
+w1637441136
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./mul.vhd
+F./mul.vhd
+l0
+L6
+VQLmN7^1k7z_Te2P4:_eMb2
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abehavioral
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work mul QLmN7^1k7z_Te2P4:_eMb2
+l18
+L14
+VJzG=hTTbFLZ8PeVUY6J=43
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1
+Eoned
+w1634833805
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./oneD.vhd
+F./oneD.vhd
+l0
+L5
+V^i7>k<hUQBgoOQKeU0bST0
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abehavioral
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work oned ^i7>k<hUQBgoOQKeU0bST0
+l15
+L13
+V_TMCcn3k2KUO=BJ5SG?`Q3
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1
+vtb_fir
+Ih]FQ?S]5K<9WW1aSUzjfG3
+Vn4ToFGQLaei@:>cm_n>5j1
+w1637257259
+8./tb_fir.v
+F./tb_fir.v
+L0 4
+Vn4ToFGQLaei@:>cm_n>5j1
+OE;L;6.2g;35
+r1
+31
+o-work ./work
+Ethreed
+w1637037517
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./threeD.vhd
+F./threeD.vhd
+l0
+L5
+V[N2za[cBC^[_3O[hUT@WL0
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abehavioral
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work threed [N2za[cBC^[_3O[hUT@WL0
+l25
+L13
+VcgK@46H3BSGF<Gn^SElaX1
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1
+Etwod
+w1635184069
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+8./twoD.vhd
+F./twoD.vhd
+l0
+L5
+V]TmfiaB60CY_CLZd7Hcb10
+OE;C;6.2g;35
+31
+o-93 -work ./work
+tExplicit 1
+Abehavioral
+DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+DE work twod ]TmfiaB60CY_CLZd7Hcb10
+l26
+L13
+VZ?Em4LEP2;9eL4?fKffb23
+OE;C;6.2g;35
+31
+M2 ieee std_logic_1164
+M1 ieee numeric_std
+o-93 -work ./work
+tExplicit 1

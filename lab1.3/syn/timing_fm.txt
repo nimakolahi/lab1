@@ -1,0 +1,90 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'FIR_unfolded' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIR_unfolded
+Version: O-2018.06-SP4
+Date   : Sun Nov 21 05:07:25 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: U2/Q_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: U68/Q_reg[8]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR_unfolded       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U2/Q_reg[3]/CK (SDFF_X1)                                0.00 #     0.00 r
+  U2/Q_reg[3]/Q (SDFF_X1)                                 0.10       0.10 f
+  U2/Q[3] (oneD_0)                                        0.00       0.10 f
+  U5/A[3] (mul_0)                                         0.00       0.10 f
+  U5/mult_20/a[3] (mul_0_DW_mult_tc_0)                    0.00       0.10 f
+  U5/mult_20/U559/Z (XOR2_X1)                             0.08       0.18 f
+  U5/mult_20/U437/ZN (NAND2_X1)                           0.04       0.22 r
+  U5/mult_20/U361/Z (BUF_X1)                              0.05       0.26 r
+  U5/mult_20/U463/ZN (INV_X1)                             0.03       0.30 f
+  U5/mult_20/U505/ZN (AOI21_X1)                           0.06       0.35 r
+  U5/mult_20/U504/ZN (OAI222_X1)                          0.07       0.42 f
+  U5/mult_20/U426/ZN (NAND2_X1)                           0.04       0.46 r
+  U5/mult_20/U329/ZN (OAI211_X1)                          0.04       0.50 f
+  U5/mult_20/U417/ZN (AND2_X1)                            0.04       0.54 f
+  U5/mult_20/U419/ZN (NOR3_X1)                            0.06       0.60 r
+  U5/mult_20/U503/ZN (OAI222_X1)                          0.06       0.66 f
+  U5/mult_20/U393/ZN (NAND2_X1)                           0.04       0.70 r
+  U5/mult_20/U371/ZN (NAND3_X1)                           0.04       0.74 f
+  U5/mult_20/U398/ZN (NAND2_X1)                           0.04       0.77 r
+  U5/mult_20/U401/ZN (NAND3_X1)                           0.04       0.81 f
+  U5/mult_20/U405/ZN (NAND2_X1)                           0.04       0.85 r
+  U5/mult_20/U370/ZN (NAND3_X1)                           0.04       0.88 f
+  U5/mult_20/U410/ZN (NAND2_X1)                           0.04       0.92 r
+  U5/mult_20/U373/ZN (NAND3_X1)                           0.04       0.96 f
+  U5/mult_20/U445/ZN (NAND2_X1)                           0.04       0.99 r
+  U5/mult_20/U446/ZN (NAND3_X1)                           0.04       1.03 f
+  U5/mult_20/U451/ZN (NAND2_X1)                           0.03       1.06 r
+  U5/mult_20/U438/ZN (NAND3_X1)                           0.04       1.10 f
+  U5/mult_20/U459/ZN (NAND2_X1)                           0.04       1.14 r
+  U5/mult_20/U462/ZN (NAND3_X1)                           0.04       1.17 f
+  U5/mult_20/U454/ZN (NAND2_X1)                           0.03       1.20 r
+  U5/mult_20/U456/ZN (NAND3_X1)                           0.03       1.24 f
+  U5/mult_20/U467/ZN (XNOR2_X1)                           0.05       1.29 r
+  U5/mult_20/U469/ZN (XNOR2_X1)                           0.06       1.34 r
+  U5/mult_20/U468/ZN (XNOR2_X1)                           0.06       1.40 r
+  U5/mult_20/U421/ZN (XNOR2_X1)                           0.07       1.47 r
+  U5/mult_20/product[15] (mul_0_DW_mult_tc_0)             0.00       1.47 r
+  U5/U1/Z (BUF_X1)                                        0.06       1.53 r
+  U5/P[8] (mul_0)                                         0.00       1.53 r
+  U68/D[8] (oneD_92)                                      0.00       1.53 r
+  U68/Q_reg[8]/D (DFF_X2)                                 0.01       1.54 r
+  data arrival time                                                  1.54
+
+  clock MY_CLK (rise edge)                                1.65       1.65
+  clock network delay (ideal)                             0.00       1.65
+  clock uncertainty                                      -0.07       1.58
+  U68/Q_reg[8]/CK (DFF_X2)                                0.00       1.58 r
+  library setup time                                     -0.04       1.54
+  data required time                                                 1.54
+  --------------------------------------------------------------------------
+  data required time                                                 1.54
+  data arrival time                                                 -1.54
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,54 @@
+# //  ModelSim SE 6.2g Feb 21 2007 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+vsim -novopt work.tb_fir
+# vsim -novopt work.tb_fir 
+# Refreshing ./work.tb_fir
+# Loading work.tb_fir
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Refreshing ./work.data_sink(beh)
+# Loading work.data_sink(beh)
+# Refreshing ./work.clk_gen(beh)
+# Loading work.clk_gen(beh)
+# Refreshing ./work.data_maker(beh)
+# Loading work.data_maker(beh)
+# Loading work.fir(behavioral)
+vsim -novopt work.tb_fir
+# vsim -novopt work.tb_fir 
+# Refreshing ./work.tb_fir
+# Loading work.tb_fir
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.numeric_std(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Refreshing ./work.data_sink(beh)
+# Loading work.data_sink(beh)
+# Refreshing ./work.clk_gen(beh)
+# Loading work.clk_gen(beh)
+# Refreshing ./work.data_maker(beh)
+# Loading work.data_maker(beh)
+# Loading work.fir(behavioral)
+add wave sim:/tb_fir/*
+run -all
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /tb_fir/UUT
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 25 ns  Iteration: 2  Instance: /tb_fir/UUT
+# ** Warning: NUMERIC_STD.TO_SIGNED: vector truncated
+#    Time: 35 ns  Iteration: 2  Instance: /tb_fir/UUT
+# ** Note: $finish    : ./tb_fir.v(38)
+#    Time: 2136 ns  Iteration: 1  Instance: /tb_fir
+# 1
+# Break in Module tb_fir at ./tb_fir.v line 38

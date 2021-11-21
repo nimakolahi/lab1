@@ -1,0 +1,89 @@
+Information: Updating design information... (UID-85)
+Warning: There are infeasible paths detected in your design that were ignored during optimization. Please run 'report_timing -attributes' and/or 'create_qor_snapshot/query_qor_snapshot -infeasible_paths' to identify these paths.  (OPT-1721)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIR
+Version: O-2018.06-SP4
+Date   : Tue Oct 26 20:32:04 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: reg_reg[3][4]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: dout_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  reg_reg[3][4]/CK (DFFR_X1)                              0.00       0.00 r
+  reg_reg[3][4]/QN (DFFR_X1)                              0.07       0.07 r
+  U292/ZN (INV_X1)                                        0.03       0.10 f
+  mult_54_I4/b[4] (FIR_DW_mult_tc_8)                      0.00       0.10 f
+  mult_54_I4/U105/S (FA_X1)                               0.15       0.25 r
+  mult_54_I4/U104/S (FA_X1)                               0.12       0.37 f
+  mult_54_I4/U189/ZN (NAND2_X1)                           0.04       0.41 r
+  mult_54_I4/U208/ZN (OAI21_X1)                           0.03       0.44 f
+  mult_54_I4/U212/ZN (AOI21_X1)                           0.06       0.51 r
+  mult_54_I4/U132/ZN (INV_X1)                             0.03       0.54 f
+  mult_54_I4/U214/ZN (AOI21_X1)                           0.04       0.58 r
+  mult_54_I4/U194/ZN (XNOR2_X1)                           0.07       0.65 r
+  mult_54_I4/product[11] (FIR_DW_mult_tc_8)               0.00       0.65 r
+  add_3_root_add_0_root_add_58_I8/A[4] (FIR_DW01_add_17)
+                                                          0.00       0.65 r
+  add_3_root_add_0_root_add_58_I8/U115/ZN (NAND2_X1)      0.04       0.69 f
+  add_3_root_add_0_root_add_58_I8/U114/ZN (OAI21_X1)      0.04       0.73 r
+  add_3_root_add_0_root_add_58_I8/U108/ZN (AOI21_X1)      0.03       0.76 f
+  add_3_root_add_0_root_add_58_I8/U68/Z (BUF_X1)          0.04       0.80 f
+  add_3_root_add_0_root_add_58_I8/U117/ZN (OAI21_X1)      0.04       0.84 r
+  add_3_root_add_0_root_add_58_I8/U100/ZN (XNOR2_X1)      0.06       0.91 r
+  add_3_root_add_0_root_add_58_I8/SUM[6] (FIR_DW01_add_17)
+                                                          0.00       0.91 r
+  add_1_root_add_0_root_add_58_I8/A[6] (FIR_DW01_add_26)
+                                                          0.00       0.91 r
+  add_1_root_add_0_root_add_58_I8/U65/ZN (OR2_X1)         0.04       0.95 r
+  add_1_root_add_0_root_add_58_I8/U97/ZN (NAND2_X1)       0.03       0.98 f
+  add_1_root_add_0_root_add_58_I8/U105/ZN (XNOR2_X1)      0.06       1.04 f
+  add_1_root_add_0_root_add_58_I8/SUM[6] (FIR_DW01_add_26)
+                                                          0.00       1.04 f
+  add_0_root_add_0_root_add_58_I8/A[6] (FIR_DW01_add_22)
+                                                          0.00       1.04 f
+  add_0_root_add_0_root_add_58_I8/U102/ZN (NOR2_X1)       0.05       1.09 r
+  add_0_root_add_0_root_add_58_I8/U117/ZN (OAI21_X1)      0.03       1.12 f
+  add_0_root_add_0_root_add_58_I8/U105/ZN (INV_X1)        0.03       1.14 r
+  add_0_root_add_0_root_add_58_I8/U112/ZN (OAI21_X1)      0.03       1.18 f
+  add_0_root_add_0_root_add_58_I8/U115/ZN (XNOR2_X1)      0.05       1.23 f
+  add_0_root_add_0_root_add_58_I8/SUM[7] (FIR_DW01_add_22)
+                                                          0.00       1.23 f
+  U277/ZN (NAND2_X1)                                      0.03       1.26 r
+  U303/ZN (NAND2_X1)                                      0.02       1.28 f
+  dout_reg[7]/D (DFFR_X2)                                 0.01       1.29 f
+  data arrival time                                                  1.29
+
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  clock uncertainty                                      -0.07      -0.07
+  dout_reg[7]/CK (DFFR_X2)                                0.00      -0.07 r
+  library setup time                                     -0.04      -0.11
+  data required time                                                -0.11
+  --------------------------------------------------------------------------
+  data required time                                                -0.11
+  data arrival time                                                 -1.29
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -1.40
+
+
+1

@@ -1,0 +1,110 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'FIR_unfolded' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FIR_unfolded
+Version: O-2018.06-SP4
+Date   : Sun Nov 21 05:16:39 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: U4/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: U112/Q_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FIR_unfolded       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  U4/Q_reg[1]/CK (DFF_X1)                                 0.00 #     0.00 r
+  U4/Q_reg[1]/Q (DFF_X1)                                  0.21       0.21 r
+  U4/Q[1] (oneD_95)                                       0.00       0.21 r
+  U7/A[1] (mul_25)                                        0.00       0.21 r
+  U7/mult_20/a[1] (mul_25_DW_mult_tc_0)                   0.00       0.21 r
+  U7/mult_20/U438/Z (XOR2_X1)                             0.12       0.33 r
+  U7/mult_20/U324/ZN (INV_X1)                             0.07       0.40 f
+  U7/mult_20/U436/ZN (NAND2_X1)                           0.11       0.51 r
+  U7/mult_20/U412/ZN (OAI22_X1)                           0.06       0.57 f
+  U7/mult_20/U104/S (HA_X1)                               0.08       0.65 f
+  U7/mult_20/U329/ZN (INV_X1)                             0.03       0.68 r
+  U7/mult_20/U379/ZN (OAI222_X1)                          0.06       0.74 f
+  U7/mult_20/U378/ZN (AOI222_X1)                          0.10       0.83 r
+  U7/mult_20/U323/ZN (INV_X1)                             0.03       0.86 f
+  U7/mult_20/U377/ZN (AOI222_X1)                          0.11       0.97 r
+  U7/mult_20/U376/ZN (OAI222_X1)                          0.07       1.03 f
+  U7/mult_20/U43/CO (FA_X1)                               0.10       1.13 f
+  U7/mult_20/U42/CO (FA_X1)                               0.09       1.22 f
+  U7/mult_20/U41/CO (FA_X1)                               0.09       1.31 f
+  U7/mult_20/U40/CO (FA_X1)                               0.09       1.40 f
+  U7/mult_20/U39/CO (FA_X1)                               0.09       1.49 f
+  U7/mult_20/U38/CO (FA_X1)                               0.09       1.58 f
+  U7/mult_20/U37/CO (FA_X1)                               0.09       1.67 f
+  U7/mult_20/U36/CO (FA_X1)                               0.09       1.76 f
+  U7/mult_20/U349/Z (XOR2_X1)                             0.08       1.84 f
+  U7/mult_20/U348/Z (XOR2_X1)                             0.07       1.91 f
+  U7/mult_20/U344/Z (XOR2_X1)                             0.07       1.98 f
+  U7/mult_20/U340/Z (XOR2_X1)                             0.07       2.05 f
+  U7/mult_20/product[15] (mul_25_DW_mult_tc_0)            0.00       2.05 f
+  U7/U1/Z (BUF_X1)                                        0.10       2.15 f
+  U7/P[8] (mul_25)                                        0.00       2.15 f
+  U111/A[8] (adder_8)                                     0.00       2.15 f
+  U111/add_20/A[8] (adder_8_DW01_add_0)                   0.00       2.15 f
+  U111/add_20/U1_8/CO (FA_X1)                             0.13       2.28 f
+  U111/add_20/U1_9/CO (FA_X1)                             0.09       2.37 f
+  U111/add_20/U1_10/CO (FA_X1)                            0.09       2.47 f
+  U111/add_20/U1_11/CO (FA_X1)                            0.09       2.56 f
+  U111/add_20/U1_12/CO (FA_X1)                            0.09       2.65 f
+  U111/add_20/U1_13/CO (FA_X1)                            0.09       2.74 f
+  U111/add_20/U1_14/CO (FA_X1)                            0.09       2.83 f
+  U111/add_20/U1_15/CO (FA_X1)                            0.09       2.92 f
+  U111/add_20/U1_16/CO (FA_X1)                            0.09       3.01 f
+  U111/add_20/U1_17/CO (FA_X1)                            0.09       3.10 f
+  U111/add_20/U1_18/CO (FA_X1)                            0.09       3.19 f
+  U111/add_20/U1_19/CO (FA_X1)                            0.09       3.28 f
+  U111/add_20/U1_20/CO (FA_X1)                            0.09       3.37 f
+  U111/add_20/U1_21/CO (FA_X1)                            0.09       3.46 f
+  U111/add_20/U1_22/CO (FA_X1)                            0.09       3.55 f
+  U111/add_20/U1_23/CO (FA_X1)                            0.09       3.64 f
+  U111/add_20/U1_24/CO (FA_X1)                            0.09       3.73 f
+  U111/add_20/U1_25/CO (FA_X1)                            0.09       3.82 f
+  U111/add_20/U1_26/CO (FA_X1)                            0.09       3.92 f
+  U111/add_20/U1_27/CO (FA_X1)                            0.09       4.01 f
+  U111/add_20/U1_28/CO (FA_X1)                            0.09       4.10 f
+  U111/add_20/U1_29/CO (FA_X1)                            0.09       4.19 f
+  U111/add_20/U1_30/CO (FA_X1)                            0.09       4.28 f
+  U111/add_20/U1_31/S (FA_X1)                             0.13       4.41 r
+  U111/add_20/SUM[31] (adder_8_DW01_add_0)                0.00       4.41 r
+  U111/S[31] (adder_8)                                    0.00       4.41 r
+  U112/D[31] (oneD_80)                                    0.00       4.41 r
+  U112/Q_reg[31]/D (DFF_X1)                               0.01       4.42 r
+  data arrival time                                                  4.42
+
+  clock MY_CLK (rise edge)                                6.60       6.60
+  clock network delay (ideal)                             0.00       6.60
+  clock uncertainty                                      -0.07       6.53
+  U112/Q_reg[31]/CK (DFF_X1)                              0.00       6.53 r
+  library setup time                                     -0.03       6.50
+  data required time                                                 6.50
+  --------------------------------------------------------------------------
+  data required time                                                 6.50
+  data arrival time                                                 -4.42
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.08
+
+
+1
